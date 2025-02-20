@@ -22,5 +22,6 @@ public class Main {
         service.addBookToEditoral(editorial, nBook);
 
         System.out.println(service.getEditorials());
+        
     }
 }
