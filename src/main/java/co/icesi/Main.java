@@ -1,10 +1,11 @@
-package co.icesi.service;
+package co.icesi;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import co.icesi.model.Book;
 import co.icesi.model.Editorial;
+import co.icesi.service.EditorialService;
 
 public class Main {
 

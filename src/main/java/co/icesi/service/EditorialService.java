@@ -1,7 +1,9 @@
 package co.icesi.service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import co.icesi.model.Book;
 import co.icesi.model.Editorial;
@@ -14,6 +16,11 @@ public class EditorialService {
 
     public void init(){
         editorials = new HashMap<>();
+        Editorial e = Editorial.builder()
+                    .name("Editorial created in init")
+                    .address("Created init").build();
+        Book b = Book.builder().author("Book created in edit service").build();
+        addBookToEditoral(e, b);
     }
 
     public void setBookService(BookService bookService) {
@@ -29,8 +36,8 @@ public class EditorialService {
         editorials.put(editorial.getId(), editorial);
     }
 
-    public Map<Integer, Editorial> getEditorials() {
-        return editorials;
+    public List<Editorial> getEditorials() {
+        return editorials.values().stream().collect(Collectors.toList());
     }
     
 }
