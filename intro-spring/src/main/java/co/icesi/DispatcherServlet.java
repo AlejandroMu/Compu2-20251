@@ -3,6 +3,7 @@ package co.icesi;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -30,18 +31,10 @@ public class DispatcherServlet  extends HttpServlet{
         PrintWriter writer = resp.getWriter();
         writer.write(response);
         writer.close();
-    }
+    }   
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        BufferedReader reader = req.getReader();
-        StringBuilder sb = new StringBuilder();
-        String line;
-        while ((line = reader.readLine()) != null) {
-            sb.append(line);
-        }
-        String requestBody = sb.toString();
-        System.out.println(req.getQueryString());
-        System.out.println(requestBody);
+        System.out.println( Arrays.toString(req.getParameterMap().get("name")));
     }
 }

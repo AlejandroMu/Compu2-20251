@@ -1,5 +1,6 @@
 package co.icesi.service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,9 +30,15 @@ public class EditorialService {
 
     public void addBookToEditoral(Editorial editorial, Book ... books){
         editorial.setId(currentId++);
+        List<Book> booksList = editorial.getBooks();
+        if(booksList == null){
+            booksList = new ArrayList<>();
+            editorial.setBooks(booksList);
+        }
         for (Book book : books) {
             book.setEditorial(editorial);
             bookService.addBook(book);
+            editorial.getBooks().add(book);
         }
         editorials.put(editorial.getId(), editorial);
     }
