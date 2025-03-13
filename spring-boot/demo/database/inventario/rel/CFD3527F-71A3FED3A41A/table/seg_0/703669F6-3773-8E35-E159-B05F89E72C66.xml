@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="703669F6-3773-8E35-E159-B05F89E72C66" name="prod_categoria">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Producto_id" id="BC55D220-12E1-7300-1474-FFA8FB213545">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94CC8142-8B44-72E9-0D82-1AD3B497DD6C" referredColumn="90C19D27-4E51-4C0B-EB86-D30C308BCB75"/>
+</associations>
+</Column>
+<Column name="categoria_categoria_ID" id="782C6DD4-6AAB-B373-F069-56E4426A22D2">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE7918D2-9169-BA7E-01A4-A3F7652F1BFA" referredColumn="DD41E5DF-4155-124B-5709-34FC79A7A5C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="319F43FB-2CD1-2AC5-20D1-803814FDD3D0" name="prod_categoria_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC55D220-12E1-7300-1474-FFA8FB213545"/>
+<colUsage columnID="782C6DD4-6AAB-B373-F069-56E4426A22D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B8A2E9B-7C31-28F0-A1F5-F19DC247B1A3" name="prod_categoria_Producto_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>304EA874-E037-E4EF-E29E-2CD6F495D485</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC55D220-12E1-7300-1474-FFA8FB213545"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FBFD1D6C-BDAB-9A11-49C4-8C894649255C" name="prod_categoria_categoria_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>304EA874-E037-E4EF-E29E-2CD6F495D485</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="782C6DD4-6AAB-B373-F069-56E4426A22D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

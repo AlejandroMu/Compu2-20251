@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="inventario" directorySegmentName="seg_0" id="7F471593-6548-4FA0-0BCD-671841CB5989">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 16:49:58 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<engineerTo>
+<item key="CFD3527F-3130-D71C-16DD-71A3FED3A41A" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>50274D6A-BE1F-8F2A-0334-FD1EA520CE30</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A1366112-DD8F-09F2-D428-48BDCD1348A6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

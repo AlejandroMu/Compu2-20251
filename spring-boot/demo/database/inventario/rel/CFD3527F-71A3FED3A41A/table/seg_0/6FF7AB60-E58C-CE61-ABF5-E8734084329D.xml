@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6FF7AB60-E58C-CE61-ABF5-E8734084329D" name="usuario">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>4FB29CEB-4389-1FB7-F9B2-006E6D2D49F3</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="BB3A495A-69B8-E292-D0B1-D51BFEC55597">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>496F95C5-FC91-919A-39F8-55111EBE057D</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="5FC878E1-C3A2-4D03-F1E6-E9C3C71AEACC">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>87E1BEFB-5B67-1E08-17FC-EDF18994BE40</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="B0224C29-2DEF-951A-E9BA-4687AF9F16A9">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>D884716D-D533-B334-1BDB-6CCDF108E3AD</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="7A46D41F-9F5E-C292-0693-BF87E5C99297">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>6C008FF2-27FB-B7B4-D9AF-DA7FDD788667</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="DE0F929B-E8D5-B32C-78D9-643AE7942D86">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>C9F10D5D-5974-AABB-F3F2-3F81EA580EF4</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_registro" id="E8946BB2-A600-2C22-F88F-49016B0953A8">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>0CC36F08-F8B8-3893-D7FD-6AF38988F4CE</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="354AEC58-5008-B9A5-A321-C1919A85FEA1">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>9D5D3613-8901-4303-F063-9DE181572B6A</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39A4F812-9F96-0F0D-F5E5-54B07FA2C67F" name="usuario_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>D290638A-9D35-0D0C-F8E0-F3CF22171C3C</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB3A495A-69B8-E292-D0B1-D51BFEC55597"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

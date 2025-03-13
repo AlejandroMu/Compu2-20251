@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1269BE08-0CAE-A573-C810-02932813ADFD" name="role">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>A32DE408-B9EC-274B-5337-C50F34680BC0</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="84D649A9-6801-90EF-FF32-AE11EDC0DB69">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>059E3232-2F1A-DA54-1678-244F505D5641</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="B8BC67E9-2FEC-73E2-8CA2-3B54FB8E9230">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>1BB998B9-D6D3-916E-1609-1E7D56835C9B</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC39B7D7-8B86-2CFD-B0C5-A4E3F1A9D04C" name="role_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>E5360C53-1DCF-A7D9-6EFD-262DF654BECA</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84D649A9-6801-90EF-FF32-AE11EDC0DB69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

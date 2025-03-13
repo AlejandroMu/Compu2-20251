@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="permisos" directorySegmentName="seg_0" id="E62CA2FF-4190-2919-7CC4-70CFBEBA6E62">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:04:49 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<engineerTo>
+<item key="CFD3527F-3130-D71C-16DD-71A3FED3A41A" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A32DE408-B9EC-274B-5337-C50F34680BC0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0D057D41-4303-2C5D-840F-55C55DFAAC31</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

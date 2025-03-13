@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="359444DB-F595-D3C6-BC6F-1D95308A1F99" name="venta">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 16:38:27 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<engineerTo>
+<item key="CFD3527F-3130-D71C-16DD-71A3FED3A41A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="C7A09424-6D29-8B7D-B7F9-959D56C32668">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:05:20 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<engineerTo>
+<item key="CFD3527F-3130-D71C-16DD-71A3FED3A41A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_venta" id="55282D79-D933-91CA-EE5A-2788E121FF03">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:05:40 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<engineerTo>
+<item key="CFD3527F-3130-D71C-16DD-71A3FED3A41A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total" id="4F9CBAA4-66C9-8FCE-92E5-AFE8DD744728">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:19:15 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<engineerTo>
+<item key="CFD3527F-3130-D71C-16DD-71A3FED3A41A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="58A786E1-24D4-0BD8-77BB-DBFAF9E9A25F">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:22:47 UTC</createdTime>
+<generatorID>4E325D2F-BEE5-1CBB-656D-22D7B3410546</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<engineerTo>
+<item key="CFD3527F-3130-D71C-16DD-71A3FED3A41A" value="true"/>
+</engineerTo>
+<referedAttribute>496F95C5-FC91-919A-39F8-55111EBE057D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B524E780-DA86-93C6-61DC-147CEC3CFD7A" name="venta PK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:05:37 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<engineerTo>
+<item key="CFD3527F-3130-D71C-16DD-71A3FED3A41A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C7A09424-6D29-8B7D-B7F9-959D56C32668</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

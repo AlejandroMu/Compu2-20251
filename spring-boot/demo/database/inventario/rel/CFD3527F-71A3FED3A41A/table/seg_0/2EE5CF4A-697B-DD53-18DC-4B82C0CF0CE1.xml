@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2EE5CF4A-697B-DD53-18DC-4B82C0CF0CE1" name="venta">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>359444DB-F595-D3C6-BC6F-1D95308A1F99</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7F0DB3AE-884B-18E1-40AC-E369366CB72D">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>C7A09424-6D29-8B7D-B7F9-959D56C32668</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_venta" id="1538D039-8E1C-B2DF-BE5B-D4A408C06859">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>55282D79-D933-91CA-EE5A-2788E121FF03</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="61ADC344-CAB1-0823-E2C4-434CE6C5B0D2">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>4F9CBAA4-66C9-8FCE-92E5-AFE8DD744728</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_id" id="628D336C-E736-C8A8-8D19-CBF8C0729571">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>58A786E1-24D4-0BD8-77BB-DBFAF9E9A25F</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE22DA00-3683-A8F2-BC46-4A58384FC170" referredColumn="BB3A495A-69B8-E292-D0B1-D51BFEC55597"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2BBD82CE-FF75-4CBF-3D2C-7D68BE1965E6" name="venta_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>B524E780-DA86-93C6-61DC-147CEC3CFD7A</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F0DB3AE-884B-18E1-40AC-E369366CB72D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90C87DCC-280F-2DC0-B82B-50CFB062E79E" name="venta_usuario_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>4E325D2F-BEE5-1CBB-656D-22D7B3410546</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="628D336C-E736-C8A8-8D19-CBF8C0729571"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

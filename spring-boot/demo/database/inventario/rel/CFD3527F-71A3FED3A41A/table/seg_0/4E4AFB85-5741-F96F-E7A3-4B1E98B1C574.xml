@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E4AFB85-5741-F96F-E7A3-4B1E98B1C574" name="precio">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:48:43 UTC</createdTime>
+<generatorID>0D057D41-4303-2C5D-840F-55C55DFAAC31</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<ordsAlias>permisov2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4A3FF46A-D69E-9445-34AF-B92746C16EB0">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:48:43 UTC</createdTime>
+<generatorID>D9CA3904-9001-991A-6A4D-918AE364B0B7</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="value" id="1DFCA045-8B2F-D1F4-DDD5-3DB57E0A887C">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:48:43 UTC</createdTime>
+<generatorID>1DF20F7C-61B6-7EE2-6AFD-843E99327675</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="5A481851-F3E4-E5DC-50D4-B31D40F986F8">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:50:17 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="producto_id" id="04B1BB5A-37AA-77B2-482E-5542B6D6DA82">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:50:38 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A99D594C-088E-6C87-88CE-7FB9F2F0FEC6" referredColumn="90C19D27-4E51-4C0B-EB86-D30C308BCB75"/>
+</associations>
+</Column>
+<Column name="nota" id="62DF2153-2B0D-92B9-B1A5-3B5A9E48B117">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:53:09 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA83E991-D22A-E4A7-5907-FFA714013561" name="permisov2_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:48:43 UTC</createdTime>
+<generatorID>4811D6F4-99F8-BE4A-D945-94DB13705A77</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A3FF46A-D69E-9445-34AF-B92746C16EB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F119C5B-055C-BBB7-5539-694882D1D408" name="precio_Producto_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:50:59 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04B1BB5A-37AA-77B2-482E-5542B6D6DA82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

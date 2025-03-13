@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E41EDB4-098B-5730-2647-126EA8E4F7AC" name="inventario_entrada">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<ordsAlias>inventario</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Producto_id" id="FE904449-A32E-3637-0AF3-98CE400B1438">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC3F0011-C644-7C56-BFAF-7856338AD618" referredColumn="90C19D27-4E51-4C0B-EB86-D30C308BCB75"/>
+</associations>
+</Column>
+<Column name="compra_id" id="1C85E46A-0D8D-03C0-CC7B-EC3CB6611C84">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7331FC3-EFD4-E321-A7C6-A469CC126640" referredColumn="51E2FA6C-DAA7-1B23-94D4-66EA34F1594E"/>
+</associations>
+</Column>
+<Column name="cantidad" id="0DA19FD0-6104-D243-5C4C-38FF24D2F2C3">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:30:32 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio_unit" id="9457EA19-A8E2-35DB-17CB-2EF2B2AE26EC">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:30:48 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D609A6D-9E6C-9261-54B2-4653C9726046" name="inventario_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE904449-A32E-3637-0AF3-98CE400B1438"/>
+<colUsage columnID="1C85E46A-0D8D-03C0-CC7B-EC3CB6611C84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36A0E19B-6506-2D4A-D5BF-01332DAC6D8A" name="inventario_Producto_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>7F471593-6548-4FA0-0BCD-671841CB5989</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE904449-A32E-3637-0AF3-98CE400B1438"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="838E82F0-C8A9-6DD8-A09B-72E2D69D91F7" name="inventario_compra_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:27:05 UTC</createdTime>
+<generatorID>7F471593-6548-4FA0-0BCD-671841CB5989</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C85E46A-0D8D-03C0-CC7B-EC3CB6611C84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

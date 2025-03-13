@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2664536E-8EF1-371C-82D1-9D5A52BEEEF5" name="inventario_salida">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:41:37 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<ordsAlias>inventariov1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Producto_id" id="D044F3A3-8BE6-62A0-1205-F15CB149AAFB">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:41:37 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2424BD6-BC38-52EB-2783-2670DC54F3D5" referredColumn="90C19D27-4E51-4C0B-EB86-D30C308BCB75"/>
+</associations>
+</Column>
+<Column name="venta_id" id="561DE95A-6CFA-F12C-CEDF-D68AA286344B">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:41:37 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="605C6D35-9310-F1F7-01E0-F5B15CB5077D" referredColumn="7F0DB3AE-884B-18E1-40AC-E369366CB72D"/>
+</associations>
+</Column>
+<Column name="cantidad" id="7A42D09B-59F0-8883-1FD6-464E0B437793">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:41:37 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio_unit" id="8A7278DF-4ACB-60AD-98D7-636AF518B5B3">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:41:37 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FDA66BD2-72C5-4E77-E9C7-C67568AC28A2" name="inventariov1_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:41:37 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D044F3A3-8BE6-62A0-1205-F15CB149AAFB"/>
+<colUsage columnID="561DE95A-6CFA-F12C-CEDF-D68AA286344B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C74BA9C-B433-B179-56F4-A57F2C08A8DB" name="inventariov1_Producto_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:41:37 UTC</createdTime>
+<generatorID>7F471593-6548-4FA0-0BCD-671841CB5989</generatorID>
+<ownerDesignName>inventario</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D044F3A3-8BE6-62A0-1205-F15CB149AAFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48E039A8-259A-A037-DA94-95DD322092CE" name="inventariov1_venta_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:45:24 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="561DE95A-6CFA-F12C-CEDF-D68AA286344B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="roles" directorySegmentName="seg_0" id="FB67015E-5CBB-5B0F-DFE1-A8C09CD8867D">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 17:04:38 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<engineerTo>
+<item key="CFD3527F-3130-D71C-16DD-71A3FED3A41A" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>4FB29CEB-4389-1FB7-F9B2-006E6D2D49F3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A32DE408-B9EC-274B-5337-C50F34680BC0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

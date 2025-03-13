@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="prod_categoria" directorySegmentName="seg_0" id="304EA874-E037-E4EF-E29E-2CD6F495D485">
+<createdBy>alejo</createdBy>
+<createdTime>2025-03-13 16:38:00 UTC</createdTime>
+<ownerDesignName>inventario</ownerDesignName>
+<engineerTo>
+<item key="CFD3527F-3130-D71C-16DD-71A3FED3A41A" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>50274D6A-BE1F-8F2A-0334-FD1EA520CE30</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CC34628D-F472-1CF5-EC1C-3D919F55CA4B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
