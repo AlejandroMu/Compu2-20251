@@ -3,6 +3,7 @@ package com.example.demo.services.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.dtos.StockInDto;
@@ -19,8 +20,11 @@ import com.example.demo.services.interfaces.StockService;
 @Service
 public class StockServiceImp implements StockService{
 
+    @Autowired
     private StockInRepository stockInRepository;
+    @Autowired
     private StockOutRepository stockOutRepository;
+    @Autowired
     private ProductRepository productRepository;
 
     @Override
