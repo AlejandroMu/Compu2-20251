@@ -12,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.example.demo.dtos.StockInDto;
 import com.example.demo.model.Buys;
 import com.example.demo.model.StockIn;
+import com.example.demo.reposiories.BuysRepository;
 import com.example.demo.reposiories.StockInRepository;
 import com.example.demo.services.interfaces.StockService;
 
@@ -23,6 +24,9 @@ public class StockServiceTest {
 
     @Autowired
     private StockInRepository stockInRepository;
+
+    @Autowired
+    private BuysRepository buysRepository;
 
     @Test
     public void testRegisterStockIn() {
@@ -38,10 +42,11 @@ public class StockServiceTest {
         buys.setTicketCode("ABC123");
         buys.setUser(null);
 
+        buys = buysRepository.save(buys);
+
         stockService.registerStockIn(stockInDtos, buys);
         List<StockIn> stockIns = stockInRepository.findAll();
         assertEquals(3, stockIns.size());
-        assertEquals(buys, stockIns);
 
     }
 }
