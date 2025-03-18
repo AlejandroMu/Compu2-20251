@@ -27,6 +27,7 @@ public class Product {
     private Integer id;
     private String name;
     private String codigo;
+    private double price;
 
     @ManyToMany
     @JoinTable(
