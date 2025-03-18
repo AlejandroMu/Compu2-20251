@@ -36,4 +36,10 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<UserRole> roles;
 
+    @OneToMany(mappedBy = "user")
+    private List<Buys> buys;
+
+    @OneToMany(mappedBy = "user")
+    private List<Sale> sales;
+
 }
