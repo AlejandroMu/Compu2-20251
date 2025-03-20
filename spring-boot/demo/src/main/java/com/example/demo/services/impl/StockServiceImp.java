@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.dtos.StockInDto;
+import com.example.demo.exeptions.ProductNotFoundException;
 import com.example.demo.model.Buys;
 import com.example.demo.model.Product;
 import com.example.demo.model.Sale;
@@ -61,8 +62,15 @@ public class StockServiceImp implements StockService{
     }
 
     @Override
-    public Integer getStockQuantity(int productId) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public Integer getStockQuantity(int productId)throws ProductNotFoundException {
+
+        Product product = productRepository.findById(productId).orElseThrow(
+            () -> new ProductNotFoundException("Product", productId)
+        );
+        Integer stockIn = product.getStockIns().stream().mapToInt(StockIn::getQuantity).sum();
+        Integer stockOut = product.getStockOuts().stream().mapToInt(StockOut::getQuantity).sum();
+
+        return stockIn - stockOut;
     }
 
 

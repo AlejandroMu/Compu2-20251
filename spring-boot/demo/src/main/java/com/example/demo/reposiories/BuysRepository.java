@@ -7,5 +7,5 @@ import com.example.demo.model.Buys;
 
 @Repository
 public interface BuysRepository extends JpaRepository<Buys, Long> {
-        
+
 }
