@@ -8,5 +8,6 @@ public interface ProductService {
     
     public List<Product> getProducts();
     public void addProduct(Product product);
+    public Product getProduct(Integer id);
 
 }

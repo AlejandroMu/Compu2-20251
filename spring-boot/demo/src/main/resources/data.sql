@@ -1,8 +1,12 @@
 INSERT INTO USERS (name, lastname, email, password,username, age) VALUES ('admin', 'admin', 'admin@coore.co','123456', 'admin', 25);
+INSERT INTO USERS (name, lastname, email, password,username, age) VALUES ('user', 'user', 'admin@coore.co','123456', 'user', 25);
 
 INSERT INTO ROLES (name, permission, description) VALUES ('ROLE_ADMIN', 'ADMIN', 'ADMIN');
+INSERT INTO ROLES (name, permission, description) VALUES ('ROLE_USER', 'user', 'user');
 
 INSERT INTO USER_ROLES (user_id, role_id) VALUES (1, 1);
+INSERT INTO USER_ROLES (user_id, role_id) VALUES (2, 2);
+
 
 INSERT INTO Category (name, description) VALUES ('Fruit', 'Fruit');
 INSERT INTO Category (name, description) VALUES ('Vegetable', 'Vegetable');
