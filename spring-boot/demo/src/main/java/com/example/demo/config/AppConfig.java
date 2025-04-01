@@ -14,16 +14,26 @@ public class AppConfig {
 
 
     @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity http)throws Exception {
-        http.formLogin( l-> l
-                .loginPage("/login")
-                .permitAll()
-                .defaultSuccessUrl("/products", true)
-                .failureUrl("/login?error=true")
-                .usernameParameter("username")
-                .passwordParameter("password")
+    SecurityFilterChain securityFilterChain(HttpSecurity security)throws Exception {
+        security.
+            authorizeHttpRequests(aut -> 
+                aut
+                    .requestMatchers("/**.css", "/auth/registro").permitAll()
+                    .anyRequest().authenticated()
+        ).formLogin(cus -> 
+                cus
+                    .loginPage("/auth/login")
+                    // .successForwardUrl("/auth/success")
+                    .permitAll()
+        ).logout(logout -> 
+                logout
+                    .logoutUrl("/auth/logout")
+                    .logoutSuccessUrl("/auth/login")
+                    .invalidateHttpSession(true)
+                    .deleteCookies("JSESSIONID")
+                    .permitAll()
         );
-        return http.build();
+        return security.build();
     }
     
 }
