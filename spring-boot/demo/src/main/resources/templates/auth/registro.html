@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Registro</title>
 </head>
 <body>
-    <div>
-        <form th:action="@{/auth/registro}" method="post">
-            <label >Nombre</label>
-            <input name="name"/>
-            <label >Apellido</label>
-            <input name="lastname"/>
-            <label >Correo</label>
-            <input name="email"/>
-            <label >Nombre de usuario</label>
-            <input name="username"/>
-            <label >Contraseña</label>
-            <input name="password"/>
-            <label >Edad</label>
-            <input name="age"/>
-            <button type="submit">Registrarme</button>
+    <div class="card">
+        <form  class="card-body" th:action="@{/auth/registro}" th:object="${user}" method="post">
+            <label class="fieldset-legend">Nombre</label>
+            <input class="input" type="text" th:field="*{name}"/>
+
+            <label class="fieldset-legend">Apellido</label>
+            <input class="input" type="text" th:field="*{lastname}"/>
+
+            <label class="fieldset-legend">Correo</label>
+            <input class="input" type="text" th:field="*{email}"/>
+
+            <label class="fieldset-legend">Nombre de usuario</label>
+            <input class="input" type="text" th:field="*{username}"/>
+
+            <label class="fieldset-legend">Contraseña</label>
+            <input class="input" type="password" th:field="*{password}"/>
+
+            <label class="fieldset-legend">Edad</label>
+            <input class="input" type="text" th:field="*{age}"/>
+
+            <button class="btn" type="submit">Registrarme</button>
         </form>
     </div>
 </body>

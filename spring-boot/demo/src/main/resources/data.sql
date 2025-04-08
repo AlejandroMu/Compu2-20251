@@ -1,6 +1,6 @@
-INSERT INTO USERS (name, lastname, email, password,username, age) VALUES ('admin', 'admin', 'admin@coore.co','123456', 'admin', 25);
-INSERT INTO USERS (name, lastname, email, password,username, age) VALUES ('user', 'user', 'admin@coore.co','123456', 'user', 25);
-
+INSERT INTO USERS (name, lastname, email, password,username, age) VALUES ('admin', 'admin', 'admin@coore.co','$2a$10$JwR3miWLoNs3nfcPw4OChevwab4jEOAi3/6kYtNFEZ0SSi/vbCK9e', 'admin', 25);
+INSERT INTO USERS (name, lastname, email, password,username, age) VALUES ('user', 'user', 'admin@coore.co','$2a$10$JwR3miWLoNs3nfcPw4OChevwab4jEOAi3/6kYtNFEZ0SSi/vbCK9e', 'user', 25);
+--- password: 123456
 INSERT INTO ROLES (name, permission, description) VALUES ('ROLE_ADMIN', 'ADMIN', 'ADMIN');
 INSERT INTO ROLES (name, permission, description) VALUES ('ROLE_USER', 'user', 'user');
 

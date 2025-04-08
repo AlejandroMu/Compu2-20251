@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -18,12 +19,12 @@ public class AppConfig {
         security.
             authorizeHttpRequests(aut -> 
                 aut
-                    .requestMatchers("/**.css", "/auth/registro").permitAll()
+                    .requestMatchers("/**.css", "/auth/registro","/products").permitAll()
                     .anyRequest().authenticated()
         ).formLogin(cus -> 
                 cus
                     .loginPage("/auth/login")
-                    // .successForwardUrl("/auth/success")
+                    .successForwardUrl("/auth/success")
                     .permitAll()
         ).logout(logout -> 
                 logout
@@ -36,4 +37,8 @@ public class AppConfig {
         return security.build();
     }
     
+    @Bean
+    BCryptPasswordEncoder encoder(){
+        return new BCryptPasswordEncoder();
+    }
 }

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Created-By: Maven WAR Plugin 3.4.0
+Build-Jdk-Spec: 17
+Implementation-Title: demo2025
+Implementation-Version: 0.0.1-SNAPSHOT
+Main-Class: org.springframework.boot.loader.launch.WarLauncher
+Start-Class: com.example.demo.Demo2025Application
+Spring-Boot-Version: 3.5.0-SNAPSHOT
+Spring-Boot-Classes: WEB-INF/classes/
+Spring-Boot-Lib: WEB-INF/lib/
+Spring-Boot-Classpath-Index: WEB-INF/classpath.idx
+Spring-Boot-Layers-Index: WEB-INF/layers.idx
+
