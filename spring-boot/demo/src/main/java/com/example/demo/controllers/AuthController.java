@@ -30,7 +30,7 @@ public class AuthController {
 
     @PostMapping("/success")
     public String afterLogin(Authentication auth, Model model) {
-
+        
         return "redirect:/products";
     }
 
