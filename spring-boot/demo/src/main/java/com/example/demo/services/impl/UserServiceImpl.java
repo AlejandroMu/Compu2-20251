@@ -22,8 +22,12 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     @Autowired
     private UserRepo userRepo;
 
-    @Autowired
     private BCryptPasswordEncoder passwordEncoder;
+    
+    @Autowired
+    public void setPasswordEncoder(BCryptPasswordEncoder passwordEncoder) {
+        this.passwordEncoder = passwordEncoder;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

@@ -1,0 +1,10 @@
+host,port,grupo,equipo,username,password
+192.168.131.101,8080,g1,losbandalos,user,123456, Sara diaz, Oscar muñoz, sebastian erazo
+192.168.131.101,8080,g1,hibernatepro,user,123456, Nicolas cardona, gabriel escobar, daniel plazas
+192.168.131.101,8080,g1,ccr,user,123456, juan camilo corrales, andres chamorro, luis rojas
+192.168.131.101,8080,g1,tulios,user,123456, juan muñoz, alejandro quiñones
+192.168.131.101,8080,g1,ErasoMejiaStick,user,123456, Juan eraso, alejandro mejia, stick martinez
+192.168.131.101,8080,g1,AmorochoRIveraJoe,user,123456, Juan Amorocho, Joshua Riviera
+192.168.131.101,8080,g1,csm,user,123456,Camilo molina, Sharik rueda, mariana de la cruz
+192.168.131.101,8080,g1,RealG,user,123456,Juan cano, pablo guzman, juan quintero
+192.168.131.101,8080,g1,AstroTeam,user,123456,juan ruiz, tomas quintero, jenifer castro.

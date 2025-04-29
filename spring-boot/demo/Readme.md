@@ -243,7 +243,7 @@ public class AppConfiguration{
     @Bean
 	SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-            .cors(t -> t.configurationSource(corsConfigurationSource()))
+            .cors(t -> t.disable())
             .csrf(c -> c.disable())
             .authorizeRequests(requests -> requests
                             .antMatchers("/public/**").permitAll())

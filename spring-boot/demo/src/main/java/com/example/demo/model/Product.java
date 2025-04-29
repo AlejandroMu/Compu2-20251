@@ -2,6 +2,8 @@ package com.example.demo.model;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -35,10 +37,13 @@ public class Product {
         joinColumns = @JoinColumn(name = "product_id"),
         inverseJoinColumns = @JoinColumn(name = "category_id")
     )
+    @JsonIgnore   
     private List<Category> categories;
 
-    @OneToMany(mappedBy = "product")    
+    @OneToMany(mappedBy = "product") 
+    @JsonIgnore   
     private List<StockIn> stockIns;
     @OneToMany(mappedBy = "product")
+    @JsonIgnore   
     private List<StockOut> stockOuts;
 }
