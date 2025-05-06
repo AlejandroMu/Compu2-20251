@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 8%;
+}
+
+.task-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+}
+
+.task-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 5px;
+}
+.task:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}

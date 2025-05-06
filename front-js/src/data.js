@@ -1,4 +1,4 @@
-export default [
+export const tasks = [
     {
         id:1,
         name:"Task 1",
@@ -60,3 +60,7 @@ export default [
         state: "in-progress"
     }
 ]
+
+export default {
+    tasks
+};
