@@ -1,4 +1,4 @@
-const Pokemon = ({pokemon}) => {
+const PokemonDetail = ({pokemon}) => {
 
     return (
         <div className='product-detail'>
@@ -10,4 +10,4 @@ const Pokemon = ({pokemon}) => {
     );
 };
 
-export default Pokemon;
+export default PokemonDetail;

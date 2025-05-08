@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import request from "../utils/pokemonService";
+import PokemonDetail from "./PokemonDetail";
+
 
 const Pokemons = () => {
 
@@ -19,10 +21,10 @@ const Pokemons = () => {
 
     return (
         <div className="list-product">
-            <h1>Mis productos</h1>
+            <h1>Mis Pokemones</h1>
             {
                 pokemons.map(
-                    (p) => <div><p>{p.name}</p></div>
+                    (p) => <PokemonDetail pokemon={p}></PokemonDetail>
                 )
             }
             <button onClick={() =>{
