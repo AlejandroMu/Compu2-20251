@@ -19,5 +19,22 @@ const request = (callback, pag = 0) => {
     ///dasda
 };
 
+const requestPokemonDetail = async (pokemon) =>{
+    const response = await fetch(pokemon.urlDetail);
+    const data = await response.json()
+    const pokemonObj = {
+     id:data.id,
+     img:data.sprites.back_default,
+     name:pokemon.name,
+     experience: data.base_experience,
+     height: data.height,
+     weight: data.weight
+    }
+    return pokemonObj
+
+
+}
+
+export {requestPokemonDetail};
 
 export default request;

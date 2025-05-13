@@ -24,7 +24,7 @@ const Pokemons = () => {
             <h1>Mis Pokemones</h1>
             {
                 pokemons.map(
-                    (p) => <PokemonDetail pokemon={p}></PokemonDetail>
+                    (p) => <PokemonDetail key={p.id} pokemon={p}></PokemonDetail>
                 )
             }
             <button onClick={() =>{
