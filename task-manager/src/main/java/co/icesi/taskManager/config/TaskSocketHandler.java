@@ -15,9 +15,9 @@ public class TaskSocketHandler extends TextWebSocketHandler {
 
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
-        String username = (String) session.getAttributes().get("username");
+        // String username = (String) session.getAttributes().get("username");
         queue.add(session);
-        System.out.println("Conectado: " + username);
+        // System.out.println("Conectado: " + username);
     }
 
     @Override
@@ -31,6 +31,19 @@ public class TaskSocketHandler extends TextWebSocketHandler {
         if (session != null) {
             queue.remove(session);
             System.out.println("Desconectado: " );
+        }
+    }
+
+    public void sendNotification(String msg){
+        try {
+            TextMessage message = new TextMessage(msg);
+            for (WebSocketSession webSocketSession : queue) {
+                webSocketSession.sendMessage(message);
+                System.out.println(webSocketSession.getId() +" notified");
+            }
+            
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

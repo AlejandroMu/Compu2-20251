@@ -37,10 +37,11 @@ public class TaskControllerImpl implements TaskController {
 
     @Override
     @PostMapping
-    @PreAuthorize("hasAuthority('CREATE_TASK')")
+    // @PreAuthorize("hasAuthority('CREATE_TASK')")
     public ResponseEntity<?> addTask(TaskDto dto) {
         Task task = mapper.taskDtoToTask(dto);
-        task = taskService.createTask(task);
+
+        task = taskService.createTask(task, dto.getListId());
         if (task == null) {
             return ResponseEntity.badRequest().build();
         }

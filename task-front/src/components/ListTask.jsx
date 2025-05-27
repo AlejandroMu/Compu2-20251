@@ -9,7 +9,7 @@ const ListTask = ({list}) => {
             margin:'30px'
         }}>
             {
-                list.tasks.map((t) => <Task task = {t}></Task>)
+                list.tasks.map((t, i) => <Task key={i} task = {t}></Task>)
             }
         </Grid>
     );

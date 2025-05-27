@@ -15,8 +15,9 @@ public class TaskInterceptor implements HandshakeInterceptor {
     public boolean beforeHandshake(ServerHttpRequest request,
             ServerHttpResponse response,
             WebSocketHandler wsHandler,
-            Map<String, Object> attributes) {
-
+            Map<String, Object> attributes) {   
+        Object token = request.getAttributes().get("token");
+        System.out.println(token);
         return true;
     }
 

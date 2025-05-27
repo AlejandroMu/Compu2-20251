@@ -6,8 +6,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import co.icesi.taskManager.config.TaskSocketHandler;
 import co.icesi.taskManager.model.Task;
+import co.icesi.taskManager.model.TaskList;
 import co.icesi.taskManager.model.User;
+import co.icesi.taskManager.repositories.TaskListRepository;
 import co.icesi.taskManager.repositories.TaskRepository;
 import co.icesi.taskManager.repositories.UserRepository;
 import co.icesi.taskManager.services.interfaces.TaskService;
@@ -21,11 +24,19 @@ public class TaskServiceImp implements TaskService {
     @Autowired
     private UserRepository userRepository;
 
-    @Override
-    public Task createTask(Task task) {
+    @Autowired
+    private TaskListRepository taskListRepository;
 
+    @Autowired
+    private TaskSocketHandler webSocketSessions;
+
+    @Override
+    public Task createTask(Task task, Integer listId) {
+        TaskList taskList = taskListRepository.findById(listId).get();
         if (taskIsValid(task)) {
+            task.setList(taskList);
             taskRepository.save(task);
+            webSocketSessions.sendNotification("new Task");
             return task;
         }else{
             return null;
