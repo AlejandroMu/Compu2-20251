@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <div class="card">
+        <form class="card-body" th:action = "@{/auth/login}" method="POST">
+            <label class="fieldset-legend" for="username" >Username:</label>
+            <input class="input" type="text" id="username" name="username">
+
+            <label class="fieldset-legend" for="password">Password:</label>
+            <input class="input" type="password" id="password" name="password">
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+    <a th:href = "@{/auth/registro}">Registrate</a>
+    
+</body>
+</html>

@@ -7,7 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.icesi.taskManager.controllers.api.TaskController;
@@ -17,7 +16,6 @@ import co.icesi.taskManager.model.Task;
 import co.icesi.taskManager.services.interfaces.TaskService;
 
 @RestController
-@RequestMapping("/tasks")
 public class TaskControllerImpl implements TaskController {
 
     @Autowired

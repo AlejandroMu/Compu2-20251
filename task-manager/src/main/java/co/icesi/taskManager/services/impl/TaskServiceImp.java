@@ -99,4 +99,13 @@ public class TaskServiceImp implements TaskService {
         return taskRepository.findAll();
     }
 
+    public List<Task> getTaskCompleted(String name){
+        List<Task> tasks = taskRepository.findAll();
+        List<Task> filt = tasks.stream().filter((t)->{
+            return t.getName().equals(name);
+        }).toList();
+
+        return filt;
+    }
+
 }

@@ -24,26 +24,30 @@ INSERT INTO role_permission (role_id, permission_id) VALUES (2, 4);
 INSERT INTO user_role (role_id, user_id) VALUES (1, 1);
 INSERT INTO user_role (role_id, user_id) VALUES (2, 2);
 
--- Tareas para To Do = 1)
-INSERT INTO task (name, description, notes, priority )
-VALUES ('Planificar sprint', 'Organizar tareas del próximo sprint', 'Reunión con el equipo',  1);
+INSERT INTO task_list (name, order_list) VALUES ('To Do', 1);
+INSERT INTO task_list (name, order_list) VALUES ('Doing', 2);
+INSERT INTO task_list (name, order_list) VALUES ('Done', 3);
 
-INSERT INTO task (name, description, notes, priority)
-VALUES ('Diseñar wireframes', 'Bocetos para la nueva interfaz', 'Enviar a revisión con UX', 2);
+-- Tareas para To Do = 1)
+INSERT INTO task (name, description, notes, priority,list )
+VALUES ('Planificar sprint', 'Organizar tareas del próximo sprint', 'Reunión con el equipo',  1, 1);
+
+INSERT INTO task (name, description, notes, priority,list)
+VALUES ('Diseñar wireframes', 'Bocetos para la nueva interfaz', 'Enviar a revisión con UX', 2, 1);
 
 -- Tareas para Doing = 2)
-INSERT INTO task (name, description, notes, priority)
-VALUES ('Implementar login', 'Funcionalidad de autenticación', 'Falta revisar validaciones', 1);
+INSERT INTO task (name, description, notes, priority,list)
+VALUES ('Implementar login', 'Funcionalidad de autenticación', 'Falta revisar validaciones', 1,2);
 
-INSERT INTO task (name, description, notes, priority)
-VALUES ('Base de datos', 'Diseño de relaciones para las entidades principales', 'Coordinar con backend',  3);
+INSERT INTO task (name, description, notes, priority,list)
+VALUES ('Base de datos', 'Diseño de relaciones para las entidades principales', 'Coordinar con backend',  3,2);
 
 -- Tareas para Done = 3)
-INSERT INTO task (name, description, notes, priority)
-VALUES ('Configurar CI/CD', 'Pipeline automatizado en Jenkins', 'Merge a main completo', 2);
+INSERT INTO task (name, description, notes, priority,list)
+VALUES ('Configurar CI/CD', 'Pipeline automatizado en Jenkins', 'Merge a main completo', 2,2);
 
-INSERT INTO task (name, description, notes, priority)
-VALUES ('Documentación inicial', 'README y estructura de carpetas', 'Subido a GitHub', 4);
+INSERT INTO task (name, description, notes, priority,list)
+VALUES ('Documentación inicial', 'README y estructura de carpetas', 'Subido a GitHub', 4,3);
 
 -- Tarea 1 asignada a usuarios 1 y 2
 INSERT INTO user_task (user_id, task_id) VALUES (1, 1);

@@ -1,11 +1,8 @@
-import { axiosInstance } from "./axiosService";
+import { axiosInstance } from './axiosService';
 
-export const getTasks = () => {
-    axiosInstance.get('/tasks').then(
-        (response) => {
-            console.log(response)
-        }
-    );
-    
-
-}
+export const getTasksList = () => {
+  return axiosInstance.get('/api/tasks-list').then((response) => {
+    console.log(response.data)
+    return response.data; 
+  });
+};

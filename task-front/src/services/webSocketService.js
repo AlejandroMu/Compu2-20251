@@ -1,5 +1,5 @@
 const useWebSocket = (callback) => {
-    const ws = new WebSocket("ws://localhost:8080/ws-connect");
+    const ws = new WebSocket("ws://localhost:8080/ws-connect?token=sadsad");
     
     ws.onopen = () => {
       console.log("Conectado");

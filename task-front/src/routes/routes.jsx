@@ -1,29 +1,23 @@
-import { createBrowserRouter, Outlet } from 'react-router';
+import { Typography } from '@mui/joy';
+import { createBrowserRouter } from 'react-router';
+import AuthWrapper from '../components/AuthWrapper';
 import TaskManagerPage from '../pages/TaskManagerPage';
-import { Login } from '../components/Login';
 
 const router = createBrowserRouter([
+  
   {
-    path: '/',
-    Component: () => (
-      <>
-        <Outlet></Outlet>
-        <div>Hello World</div>
-      </>
-    ),
-    children: [
-      { path: 'children', Component: () => <div> children component</div> },
-      { path: 'children2', Component: () => <div> children 2 component</div> },
-      
-    ],
+    path: '/tasks-board',
+    element: <AuthWrapper/>,
+    children:[
+      {
+        index: true,
+        Component: TaskManagerPage
+      }
+    ] 
   },
   {
-    path: '/tasks',
-    Component: TaskManagerPage,
-  },
-  {
-    path: 'login',
-    Component: Login
+    path: '/**',
+    Component: () => <Typography>404</Typography>
   }
 ]);
 

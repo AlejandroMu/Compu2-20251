@@ -1,17 +1,11 @@
 import { Button, Card, Typography } from '@mui/joy';
 import { useState } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router';
+import { useNavigate } from 'react-router';
 import { login } from '../services/auhtenticationService';
 
 export const Login = () => {
   const [data, setData] = useState({});
   const nav = useNavigate();
-  const {para} = useParams();
-
-   // Query string
-  const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
-  const key = queryParams.get("key");
 
   const loginBtn = () => {
     if (data.username && data.password) {

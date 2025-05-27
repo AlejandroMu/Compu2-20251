@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <div class="card">
+        <form  class="card-body" th:action="@{/auth/registro}" th:object="${user}" method="post">
+            <label class="fieldset-legend">Nombre</label>
+            <input class="input" type="text" th:field="*{firstName}"/>
+
+            <label class="fieldset-legend">Apellido</label>
+            <input class="input" type="text" th:field="*{lastName}"/>
+
+            <label class="fieldset-legend">Correo</label>
+            <input class="input" type="text" th:field="*{email}"/>
+
+            <label class="fieldset-legend">Nombre de usuario</label>
+            <input class="input" type="text" th:field="*{username}"/>
+
+            <label class="fieldset-legend">Contraseña</label>
+            <input class="input" type="password" th:field="*{password}"/>
+
+            <label class="fieldset-legend">Dirección</label>
+            <input class="input" type="text" th:field="*{address}"/>
+
+            <button class="btn" type="submit">Registrarme</button>
+        </form>
+    </div>
+</body>
+</html>

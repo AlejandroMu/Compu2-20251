@@ -26,7 +26,7 @@ public class HomeController {
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
-    @PostMapping("/login")
+    @PostMapping("/api/login")
     public ResponseEntity<String> home(@RequestBody User user) {
 
         UserDetails userDetails = userService.loadUserByUsername(user.getUsername());

@@ -17,7 +17,6 @@ public class TaskInterceptor implements HandshakeInterceptor {
             WebSocketHandler wsHandler,
             Map<String, Object> attributes) {
 
-
         return true;
     }
 

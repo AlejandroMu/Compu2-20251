@@ -3,6 +3,7 @@ package co.icesi.taskManager.services.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -27,6 +28,8 @@ public class UserServiceImp implements UserDetailsService{
             throw new UsernameNotFoundException("User not found");
         }
         List<SimpleGrantedAuthority> authorities = new ArrayList<>();
+        Hibernate.initialize(user.getRoles());
+
         user.getRoles().forEach(role -> {
            role.getPermissions().forEach(permission -> {
                authorities.add(new SimpleGrantedAuthority(permission.getName()));
@@ -39,5 +42,11 @@ public class UserServiceImp implements UserDetailsService{
                 authorities
         );
         return userDetails;
+    }
+
+
+    public boolean saveUser(User user) {
+        userRepository.save(user);
+        return true;
     }
 }

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import co.icesi.taskManager.dtos.TaskDto;
 
-@RequestMapping("/tasks")
+@RequestMapping("/api/tasks")
 public interface TaskController {
     
     @GetMapping
